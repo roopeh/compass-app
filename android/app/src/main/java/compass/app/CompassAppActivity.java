@@ -20,7 +20,7 @@ import android.location.LocationManager;
 import android.Manifest.permission;
 import android.os.Bundle;
 import android.view.WindowManager;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
@@ -37,12 +37,12 @@ public class CompassAppActivity extends Activity
     private SensorManager sensorMgr = null;
 
     // Sensor data
-    private final float magneticData[] = new float[3];
-    private final float accelerometerData[] = new float[3];
+    private final float[] magneticData = new float[3];
+    private final float[] accelerometerData = new float[3];
 
     // Rotation and orientation data
-    private final float rotationData[] = new float[9];
-    private final float orientationData[] = new float[3];
+    private final float[] rotationData = new float[9];
+    private final float[] orientationData = new float[3];
 
     // Location
     private Location currentLocation = null;
