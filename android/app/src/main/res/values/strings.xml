@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="lat">Latitude</string>
+    <string name="lon">Longitude</string>
+    <string name="bear">Bearing</string>
+    <string name="icon_bg">Compass Background</string>
+    <string name="icon_point">Compass Pointer</string>
+    <string name="degreeSign">°</string>
+</resources>

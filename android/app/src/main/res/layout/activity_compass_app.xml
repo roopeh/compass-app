@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f3739"
+    tools:context="compass.app.CompassAppActivity">
+
+    <!-- The text which shows the current bearing in degrees -->
+    <TextView
+        android:id="@+id/textBearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/bear"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <!-- Text which shows current latitude -->
+    <TextView
+        android:id="@+id/textLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textLong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/lat"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <!-- Text which shows current longitude -->
+    <TextView
+        android:id="@+id/textLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="@string/lon"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <!-- The static background image for compass
+    Image created by https://code.tutsplus.com/ -->
+    <ImageView
+        android:id="@+id/compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon_bg"
+        android:src="@drawable/background" />
+
+    <!-- The pointer for compass
+    Image created by https://code.tutsplus.com/ -->
+    <ImageView
+        android:id="@+id/compassPointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon_point"
+        android:src="@drawable/arrow" />
+</RelativeLayout>
